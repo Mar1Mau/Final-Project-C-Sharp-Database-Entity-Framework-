@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FilesDBModelStoreContainer" CdmEntityContainer="FilesDBEntities">
+    <EntitySetMapping Name="Files">
+      <EntityTypeMapping TypeName="FilesDBModel.File">
+        <MappingFragment StoreEntitySet="Files">
+          <ScalarProperty Name="FileId" ColumnName="FileId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Searches">
+      <EntityTypeMapping TypeName="FilesDBModel.Search">
+        <MappingFragment StoreEntitySet="Searches">
+          <ScalarProperty Name="SearchID" ColumnName="SearchID" />
+          <ScalarProperty Name="SearchName" ColumnName="SearchName" />
+          <ScalarProperty Name="DirectoryName" ColumnName="DirectoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FilesPerSearches" TypeName="FilesDBModel.FilesPerSearches" StoreEntitySet="FilesPerSearches">
+      <EndProperty Name="Files">
+        <ScalarProperty Name="FileId" ColumnName="FileId" />
+      </EndProperty>
+      <EndProperty Name="Searches">
+        <ScalarProperty Name="SearchID" ColumnName="SearchId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="InsertFiles" FunctionName="FilesDBModel.Store.InsertFiles" />
+    <FunctionImportMapping FunctionImportName="InsertFilesSearches" FunctionName="FilesDBModel.Store.InsertFilesSearches" />
+    <FunctionImportMapping FunctionImportName="InsertSearches" FunctionName="FilesDBModel.Store.InsertSearches" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,36 @@
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\BLL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\BLL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\BOL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\DAL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\BOL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\DAL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\obj\Debug\BLL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\obj\Debug\BLL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\BLL.dll.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\EntityFramework.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\DAL.dll.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\EntityFramework.xml
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\BLL\bin\Debug\BOL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\BLL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\BLL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\BLL.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\BOL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\DAL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\EntityFramework.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\BOL.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\BOL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\DAL.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\DAL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\EntityFramework.xml
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\obj\Debug\BLL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\BLL\obj\Debug\BLL.pdb

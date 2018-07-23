@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FilesDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Searches" Relationship="Self.FilesPerSearches" FromRole="Files" ToRole="Searches" />
+  </EntityType>
+  <EntityType Name="Search">
+    <Key>
+      <PropertyRef Name="SearchID" />
+    </Key>
+    <Property Name="SearchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SearchName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DirectoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Files" Relationship="Self.FilesPerSearches" FromRole="Searches" ToRole="Files" />
+  </EntityType>
+  <Association Name="FilesPerSearches">
+    <End Role="Files" Type="Self.File" Multiplicity="*" />
+    <End Role="Searches" Type="Self.Search" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="FilesDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Files" EntityType="Self.File" />
+    <EntitySet Name="Searches" EntityType="Self.Search" />
+    <AssociationSet Name="FilesPerSearches" Association="Self.FilesPerSearches">
+      <End Role="Files" EntitySet="Files" />
+      <End Role="Searches" EntitySet="Searches" />
+    </AssociationSet>
+    <FunctionImport Name="InsertFiles">
+      <Parameter Name="FileName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertFilesSearches">
+      <Parameter Name="SearchID" Mode="In" Type="Int32" />
+      <Parameter Name="FileId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="InsertSearches">
+      <Parameter Name="SearchName" Mode="In" Type="String" />
+      <Parameter Name="DirectoryName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

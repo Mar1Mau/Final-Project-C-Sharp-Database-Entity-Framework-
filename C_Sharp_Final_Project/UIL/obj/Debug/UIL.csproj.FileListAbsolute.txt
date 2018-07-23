@@ -1,0 +1,42 @@
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\C_Sharp_Project_with_DB.exe.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\C_Sharp_Project_with_DB.exe
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\C_Sharp_Project_with_DB.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\BLL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\BOL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\BLL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\BOL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\UIL.csprojAssemblyReference.cache
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\UIL.csproj.CoreCompileInputs.cache
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\UIL.csproj.CopyComplete
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\C_Sharp_Project_with_DB.exe
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\C_Sharp_Project_with_DB.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\DAL.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\EntityFramework.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\BLL.dll.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\DAL.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\DAL.dll.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\EntityFramework.xml
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\BOL.dll.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\C_Sharp_Project_with_DB.exe.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\C_Sharp_Project_with_DB.exe
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\C_Sharp_Project_with_DB.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\BLL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\BOL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\EntityFramework.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\DAL.dll
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\BLL.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\BLL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\BOL.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\BOL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\EntityFramework.xml
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\DAL.pdb
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\bin\Debug\DAL.dll.config
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\obj\Debug\UIL.csprojAssemblyReference.cache
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\obj\Debug\UIL.csproj.CoreCompileInputs.cache
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\obj\Debug\UIL.csproj.CopyComplete
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\obj\Debug\C_Sharp_Project_with_DB.exe
+C:\Users\marina\Desktop\C Sharp Project\C_Sharp_Final_Project\UIL\obj\Debug\C_Sharp_Project_with_DB.pdb

@@ -1,0 +1,7 @@
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\C_Sharp_Project_with_DB.exe.config
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\C_Sharp_Project_with_DB.exe
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\bin\Debug\C_Sharp_Project_with_DB.pdb
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\C_Sharp_Project_with_DB.csprojAssemblyReference.cache
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\C_Sharp_Project_with_DB.csproj.CoreCompileInputs.cache
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\C_Sharp_Project_with_DB.exe
+C:\Users\marina\source\repos\C_Sharp_Project_with_DB\C_Sharp_Project_with_DB\obj\Debug\C_Sharp_Project_with_DB.pdb

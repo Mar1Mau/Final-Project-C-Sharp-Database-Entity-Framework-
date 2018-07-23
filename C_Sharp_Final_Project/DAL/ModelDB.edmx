@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FilesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Files">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="FilesPerSearches">
+          <Key>
+            <PropertyRef Name="SearchId" />
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="SearchId" Type="int" Nullable="false" />
+          <Property Name="FileId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Searches">
+          <Key>
+            <PropertyRef Name="SearchID" />
+          </Key>
+          <Property Name="SearchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SearchName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DirectoryName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__FilesPerS__FileI__36B12243">
+          <End Role="Files" Type="Self.Files" Multiplicity="1" />
+          <End Role="FilesPerSearches" Type="Self.FilesPerSearches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Files">
+              <PropertyRef Name="FileId" />
+            </Principal>
+            <Dependent Role="FilesPerSearches">
+              <PropertyRef Name="FileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__FilesPerS__Searc__35BCFE0A">
+          <End Role="Searches" Type="Self.Searches" Multiplicity="1" />
+          <End Role="FilesPerSearches" Type="Self.FilesPerSearches" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Searches">
+              <PropertyRef Name="SearchID" />
+            </Principal>
+            <Dependent Role="FilesPerSearches">
+              <PropertyRef Name="SearchId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="InsertFiles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="FileName" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="InsertFilesSearches" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchID" Type="int" Mode="In" />
+          <Parameter Name="FileId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="InsertSearches" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchName" Type="nvarchar" Mode="In" />
+          <Parameter Name="DirectoryName" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="FilesDBModelStoreContainer">
+          <EntitySet Name="Files" EntityType="Self.Files" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FilesPerSearches" EntityType="Self.FilesPerSearches" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Searches" EntityType="Self.Searches" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__FilesPerS__FileI__36B12243" Association="Self.FK__FilesPerS__FileI__36B12243">
+            <End Role="Files" EntitySet="Files" />
+            <End Role="FilesPerSearches" EntitySet="FilesPerSearches" />
+          </AssociationSet>
+          <AssociationSet Name="FK__FilesPerS__Searc__35BCFE0A" Association="Self.FK__FilesPerS__Searc__35BCFE0A">
+            <End Role="Searches" EntitySet="Searches" />
+            <End Role="FilesPerSearches" EntitySet="FilesPerSearches" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FilesDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="File">
+          <Key>
+            <PropertyRef Name="FileId" />
+          </Key>
+          <Property Name="FileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Searches" Relationship="Self.FilesPerSearches" FromRole="Files" ToRole="Searches" />
+        </EntityType>
+        <EntityType Name="Search">
+          <Key>
+            <PropertyRef Name="SearchID" />
+          </Key>
+          <Property Name="SearchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SearchName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DirectoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Files" Relationship="Self.FilesPerSearches" FromRole="Searches" ToRole="Files" />
+        </EntityType>
+        <Association Name="FilesPerSearches">
+          <End Role="Files" Type="Self.File" Multiplicity="*" />
+          <End Role="Searches" Type="Self.Search" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="FilesDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Files" EntityType="Self.File" />
+          <EntitySet Name="Searches" EntityType="Self.Search" />
+          <AssociationSet Name="FilesPerSearches" Association="Self.FilesPerSearches">
+            <End Role="Files" EntitySet="Files" />
+            <End Role="Searches" EntitySet="Searches" />
+          </AssociationSet>
+          <FunctionImport Name="InsertFiles">
+            <Parameter Name="FileName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="InsertFilesSearches">
+            <Parameter Name="SearchID" Mode="In" Type="Int32" />
+            <Parameter Name="FileId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="InsertSearches">
+            <Parameter Name="SearchName" Mode="In" Type="String" />
+            <Parameter Name="DirectoryName" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FilesDBModelStoreContainer" CdmEntityContainer="FilesDBEntities">
+          <EntitySetMapping Name="Files">
+            <EntityTypeMapping TypeName="FilesDBModel.File">
+              <MappingFragment StoreEntitySet="Files">
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Searches">
+            <EntityTypeMapping TypeName="FilesDBModel.Search">
+              <MappingFragment StoreEntitySet="Searches">
+                <ScalarProperty Name="SearchID" ColumnName="SearchID" />
+                <ScalarProperty Name="SearchName" ColumnName="SearchName" />
+                <ScalarProperty Name="DirectoryName" ColumnName="DirectoryName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FilesPerSearches" TypeName="FilesDBModel.FilesPerSearches" StoreEntitySet="FilesPerSearches">
+            <EndProperty Name="Files">
+              <ScalarProperty Name="FileId" ColumnName="FileId" />
+            </EndProperty>
+            <EndProperty Name="Searches">
+              <ScalarProperty Name="SearchID" ColumnName="SearchId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="InsertFiles" FunctionName="FilesDBModel.Store.InsertFiles" />
+          <FunctionImportMapping FunctionImportName="InsertFilesSearches" FunctionName="FilesDBModel.Store.InsertFilesSearches" />
+          <FunctionImportMapping FunctionImportName="InsertSearches" FunctionName="FilesDBModel.Store.InsertSearches" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
